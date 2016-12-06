@@ -1,0 +1,64 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+  font-size: 1.15em;
+}
+.axis path,
+.axis line {
+     fill: none;
+     stroke: #333;
+     shape-rendering: crispEdges;
+}
+
+.axis {
+  font-size: 9px;
+}
+.button {
+  background-color: #F96656;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 2px;
+}
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.navbar-default {
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-default .navbar-brand {
+  font-weight: 600;
+  color: black;
+  font-size: 1.75em;
+}
+.navbar-default .navbar-brand:hover {
+  font-weight: 600;
+  color: black;
+}
+.navbar-default .navbar-brand:visited {
+  font-weight: 600;
+  color: black;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: black;
+    font-size: 1.25em;
+}
+.nav.navbar-nav.navbar-right li a:hover {
+    color: black;
+}
+.nav.navbar-nav.navbar-right li a:visited {
+    color: black;
+}
+
+#header-title {
+  color: #97D4ED;
+}

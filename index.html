@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uber Everywhere - Home</title>
+
+  <!-- Load Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <!-- Load Custom Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/leaflet.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">UBER EVERYWHERE</a>
+      </div>
+      <div id="nav-menu">
+        <ul class="nav navbar-nav navbar-right" id="nav-menu">
+          <li><a href="process.html">Process Book</a></li>
+        </ul>
+      </div>
+    </div><!--/.container-fluid -->
+  </nav>
+  <div class="container-fluid">
+    <section id="header-info">
+      <div class="row">
+        <div class="col-md-8 col-centered">
+          <div>
+            <h1 id="header-title">Visualizing Uber in New York City</h1>
+            </br>
+            <p>Uber launched in NYC in 2011, making it the first city expansion outside for the company outside of San Francisco. The company has seen hyper-growth in the city, transforming transportation structures throughout the metropolis.</p>
+            <p>We're trying to visualize how the service has grown, what factors are affecting pickups, and how other transportation companies have fared relative to Uber.</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </section>
+    <section id="main-day">
+      <div class="row">
+        <div class="col-md-8 col-centered">
+          <div>
+            <h2>A Day in the Life</h2>
+            </br>
+            <p>What does a typical day look like for Uber in Manhattan? What happens to the number of pickups as the day goes on?</p>
+          </div>
+          <div class="col-md-6">
+            <button class="button" id="clock"></button>
+          </div>
+          <div class="col-md-6">
+            <div id="total-count"></div>
+            <div id="counter-svg"></div>
+          </div>
+          <div id="ny-map"></div>
+          <hr>
+        </div>
+      </div>
+    </section>
+    <section id="average-data">
+      <div class="row">
+        <div class="col-md-8 col-centered">
+          <div>
+            <h2>What Does the Average Week Look Like?</h2>
+            </br>
+            <p>Below we have the average pickups for Uber and other 8 taxi companies.</p>
+          </div>
+          <div id="tile-chart"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Load JS libraries -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/queue.v1.min.js"></script>
+
+  <!-- Visualization objects -->
+
+  <script src="js/boroughs.js"></script>
+  <script src="js/timeLapse.js"></script>
+  <script src="js/vehicles.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/stats.js"></script>
+
+  <!-- Load data, create visualizations -->
+  <script src="js/main.js"></script>
+</body>
+</html>

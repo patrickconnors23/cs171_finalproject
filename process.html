@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uber Everywhere - Process Book</title>
+
+  <!-- Load Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,400italic,700' rel='stylesheet' type='text/css'>
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/leaflet.css">
+</head>
+<body data-spy="scroll" data-target="#scroller" data-offset="50">
+
+  <div class="container-fluid">
+    <div class="row row-centered" id="main-nav">
+      <div class="col-md-12">
+        <ul class="nav nav-pills nav-justified">
+          <li><a class="nav-menu" href="index.html">Home</a></li>
+          <li><a class="nav-menu" href="weather.html">Weather Surges</a></li>
+          <li><a class="nav-menu" href="stats.html">Stats</a></li>
+          <li><a class="nav-menu" href="vehicles.html">Other Vehicles</a></li>
+          <li class="active"><a class="nav-menu" href="#">Process Book</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3" id="scroller">
+          <ul class="nav nav-pills nav-stacked affix-top" data-spy="affix" data-offset-top="125">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#questions">Questions</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="#working">Working with the Data</a></li>
+            <li><a href="#sketches">Sketches</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6">
+          <section id="overview">
+            <h2>Overview of the Process</h2>
+            <p>
+              Uber launched with in 2010 with a simple, yet revolutionary premise. Tap a button and within minutes, a driver would arrive to take you to your destination. Over the past couple years, Uber has grown at an extraordinary pace, serving millions of rides per day across the globe and defining new methods of transportation across cities.
+The purpose behind our project is to understand what impact Uber has had on transportation in New York City, as well as how specifically the company has spread its reach through the city. <br> Our goals include educating our audience about Uber’s growth in New York City through 2014 and 2015, visualizing what impact Uber has had on the taxi cab system in the city, as well as understanding what neighborhoods of New York City are most affected by the growth of this new transportation juggernaut.
+Tasks for our team include wrangling, cleaning, and organizing the Uber pickup data and other for-hire vehicle data. We need to make sure all the data are consistent and in the same structures. <br> Other tasks include deciding storytelling methods that will be effective, as well as designing mockups and storyboards of our visualizations. We also need to work on implementing the visualizations and make sure everything looks clean and polished at the end.
+            </p>
+          </section>
+          <hr>
+          <section id="questions">
+            <h2>What Questions Do We Have?</h2>
+            <p>
+              We had four main questions that helped us develop how we wanted to visualize our data and think about how we wanted to tell the story of Uber in New York City.
+              <br>
+              <strong>How quickly has Uber grown in New York City?</strong>
+              <br>
+              This was one of our most presssing questions, and we believe this data can reveal a lot about this question. A timeline and map can help tell the story about how quickly this has happened.
+              <br>
+              <strong>Do changes in weather have an impact on Uber surges?</strong>
+              <br>
+              We had to incorporate weather data from an additional source. We also felt this was a good area to explore implementing the coordinated view.
+              <br>
+              <strong>Does the amount of Uber pickups vary across neighborhoods with different socioeconomic demographics?</strong>
+              <br>
+              We have yet to figure this out, but feel as if it is a very interesting problem to tackle and solve. Sure, this new technology has generally come in for the better, but does it favor some members of society over others?
+              <br>
+              <strong>How does Uber's growth compare to those of other for-hire vehicles?</strong>
+              <br>
+              We also have data on other for-hire vehicles in NYC, such as taxis and Lyft. It'd be interesting to visualize how much of a negative impact (if at all) Uber has had on these companies.
+            </p>
+          </section>
+          <hr>
+          <section id="data">
+            <h2>Our Data Sources</h2>
+            <p>
+              Our primary data source is this GitHub repository from FiveThirtyEight: <a>https://github.com/fivethirtyeight/uber-tlc-foil-response.</a> Uber is a private company, so normally they wouldn’t release their data, but they gave this up in a freedom of information request FiveThirtyEight submitted to NYC’s Taxi and Limousine Commission. According to FiveThirtyEight, the data includes information on over 4.5 million Uber pickups in New York City from April 2014 to September 2014, as well as 14.3 million pickups from January 2015 to June 2015. There is also aggregated data on taxis and other for-hire vehicles operating in NYC. The data is split into CSV files, which we know how to load properly into d3. We can create object structures around data, time, latitude, and longitude of the pickups.
+            </p>
+          </section>
+          <hr>
+          <section id="working">
+            <h2>Working With the Data</h2>
+            <p>
+              Initially, we've been having some issues with the data because the sets are so large. We are currently working on ways to properly sort and clean the data, so we don't have these issues. A lot of the runtime burden is falling on the browsewr, and we want to see if there's a way to place that on the server instead.
+            </p>
+          </section>
+          <hr>
+          <section id="sketches">
+            <h2>Sketching Things Out</h2>
+            <p>
+              Here are a few of the sketches we've worked on so far.
+            </p>
+            <img src="images/custom.JPG" style="height:500px; width:500px;">
+            <br>
+            <img src="images/custom2.JPG" style="height:500px; width:500px;">
+            <br>
+            <img src="images/example1.JPG" style="height:500px; width: 500px;">
+            <br>
+            <img src="images/example2.JPG" style="height:500px; width: 500px;">
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Load JS libraries -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/leaflet.js"></script>
+
+  <!-- Visualization objects -->
+  <script src="js/timeLapse.js"></script>
+
+  <!-- Load data, create visualizations -->
+  <script src="js/main.js"></script>
+</body>
+</html>
